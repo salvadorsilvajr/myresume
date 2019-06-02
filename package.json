@@ -1,0 +1,18 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "my curriculum  vitae fro work",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salvador Silva",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemailer": "^6.2.1",
+    "serve-static": "^1.14.1"
+  }
+}

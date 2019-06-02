@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+/* ----- ----- HEADER ----- ----- */
+.jumbotron {
+	padding-right: 15%;
+}
+
+h1 {
+	color: #e9ecef;
+	font-family: 'Montez', cursive;
+}
+
+
+.intro {
+	margin-left: 5rem;
+}
+
+.intro p {
+	color: #e9ecef;
+	font-size: 18px;
+}
+
+.jumbotron img {
+	margin-left: 10%;
+	width: 10rem;
+	height: 10rem;
+}
+
+
+
+/* ----- ----- MAIN ----- ----- */
+
+#about {
+	top: 11rem;
+	background-color: #4caf50;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+#blog {
+	top: 16rem;
+	background-color: #2196f3;
+	animation-duration: 3s;
+	animation-delay: 1.5s;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+#projects {
+	top: 21rem;
+	background-color: #f44336;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+#contact {
+	top: 26rem;
+	background-color: #555;
+	animation-duration: 3s;
+	animation-delay: 2.5s;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+.main #mySidenav a {
+	position: absolute;
+	left: -98px;
+	transition: 0.3s;
+	padding: 8px;
+	width: 120px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+#pages {
+	margin-left: 5rem;
+
+}
+
+.info2 {
+	padding-top: 1rem;
+	padding-right: 5rem;
+	padding-left: 5rem;
+	display: block;
+	background: #e9ecef;
+	height: 28rem;
+	overflow-y: auto;
+}
+.info2 h2 {
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+.info2 h4 {
+	color: #4caf50;
+	font-size: 1.5rem;
+}
+
+.info2 a {
+text-decoration: none;
+}
+
+
+.info2 h5 {
+	font-size: 1.1rem;
+}
+
+.info1 {
+	display: none;
+	background: #bbb;
+	height: 28rem;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+
+footer .social {
+  text-align: center;
+  padding: 5px 0; }
+  footer .social a {
+    padding: 10px;
+    display: inline-block;
+    margin: 0 20px;
+    width: 50px;
+    font-size: 22px;
+    color: #fff;
+    background: #000;
+    border-radius: 100px; }
+    footer .social a:hover {
+      text-decoration: none; }
+    footer .social a.facebook {
+      background: #3b5998; }
+    footer .social a.twitter {
+      background: #55acee; }
+    footer .social a.snapchat {
+      color: black;
+      background: #fffc00; }
+
+.paso1, .paso2, .paso3, .paso4{
+  display: none;
+}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+	.jumbotron {
+	padding-right: 3%;
+}
+	h1 {
+		font-size: 1.8rem;
+}
+	.intro p{
+		font-size: 12px;
+}
+	#about {
+		top: 16rem;
+	}
+	#blog {
+		top: 21rem;
+	}
+	#projects {
+		top: 26rem;
+	}
+	#contact {
+		top: 31rem;
+	}
+
+	#pages {
+		margin-right: 1rem;
+	}
+
+	.info2 {
+		padding-right: 2rem;
+	  padding-left: 1rem;
+	}
+
+	.info2 h2, h4, h5 {
+		font-size: 1.3rem;
+	}
+
+	.info2 p {
+		font-size: 12px;
+	}
+	
+
+}
+
+@media screen and (max-width: 400px) {
+}
