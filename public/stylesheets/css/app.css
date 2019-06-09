@@ -158,16 +158,27 @@ footer .social {
 }
 
 /* ----- ----- MEDIA QUERIES ----- ----- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 576px) {
 	.jumbotron {
 	padding-right: 3%;
 }
 	h1 {
 		font-size: 1.8rem;
 }
+	.intro {
+		margin-left: 5px;
+	}
+	
 	.intro p{
 		font-size: 12px;
 }
+	
+.jumbotron img {
+	margin-right: 1%;
+	margin-left: 2%;
+	width: 5rem;
+	height: 5rem;
+}	
 	#about {
 		top: 16rem;
 	}

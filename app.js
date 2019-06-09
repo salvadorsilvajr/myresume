@@ -30,12 +30,12 @@ app.post("/", function(req, res){
   var newcoment = {name: name, phone: phone, enail: email, coment: coment};
   console.log(newcoment);
 	
-  console.log( process.env.EMAIL_KEY );
+  console.log(process.env.EMAIL_KEY);
 	
   const auth = {
   	auth: {
-		api_key: "2b6642f3c44aebae42aa6c2354342585-87cdd773-75a12d9a",
-		domain: "sandboxcb3ef3bc36ec46ecaa3d5c48baa14cf4.mailgun.org"
+		api_key: "'" + process.env.EMAIL_KEY + "'",
+		domain: "'" + process.env.DOMAIN + "'"
 	}
   };	
 
@@ -62,6 +62,6 @@ app.post("/", function(req, res){
 
 require('dotenv').config();
 
-app.listen(3000, process.env.IP, function(){
+app.listen(9000, process.env.IP, function(){
    console.log("The Resume Server Has Started!" + this.address().port);
 });
