@@ -16,6 +16,7 @@ body {
 	padding-right: 15%;
 }
 
+
 h1 {
 	color: #e9ecef;
 	font-family: 'Montez', cursive;
@@ -71,6 +72,10 @@ h1 {
 	animation-duration: 3s;
 	animation-delay: 2.5s;
 	font-family: 'Nothing You Could Do', cursive;
+}
+
+.main .container {
+	padding-right: 0;
 }
 
 .main #mySidenav a {
@@ -162,11 +167,12 @@ footer .social {
 	.jumbotron {
 	padding-right: 3%;
 }
+	
 	h1 {
 		font-size: 1.8rem;
 }
 	.intro {
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 	
 	.intro p{
@@ -174,11 +180,18 @@ footer .social {
 }
 	
 .jumbotron img {
-	margin-right: 1%;
-	margin-left: 2%;
+	margin-top:35%;
+	margin-right: 5%;
+	margin-left: 4%;
 	width: 5rem;
 	height: 5rem;
-}	
+}
+	
+	.main .container {
+	padding-right: 0;
+}
+	
+	
 	#about {
 		top: 16rem;
 	}
