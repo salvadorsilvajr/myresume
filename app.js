@@ -34,8 +34,8 @@ app.post("/", function(req, res){
 	
   const auth = {
   	auth: {
-		api_key: "'" + process.env.EMAIL_KEY + "'",
-		domain: "'" + process.env.DOMAIN + "'"
+		api_key: "2b6642f3c44aebae42aa6c2354342585-87cdd773-75a12d9a",
+		domain: "sandboxcb3ef3bc36ec46ecaa3d5c48baa14cf4.mailgun.org"
 	}
   };	
 
