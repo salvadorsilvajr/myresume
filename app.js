@@ -58,7 +58,6 @@ app.post("/", function(req, res){
     });
 }); 
 
-require('dotenv').config();
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
