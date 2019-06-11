@@ -61,6 +61,6 @@ app.post("/", function(req, res){
 require('dotenv').config();
 
 
-app.listen(3000, process.env.IP, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The Resume Server Has Started!" + this.address().port);
 });
