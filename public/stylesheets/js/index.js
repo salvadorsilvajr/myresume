@@ -1,3 +1,8 @@
+var passemail = config.PASS_EMAIL;
+var emailkey =  config.EMAIL_KEY;
+var domain =   config.DOMAIN;
+
+
 function sele1() {
   var kids = document.getElementById("pages").children;
   for (i = 0; i < kids.length; i++) {

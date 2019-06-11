@@ -1,8 +1,7 @@
 var express = require("express"),
   app = express(),
     
-  
-	  
+ 
   bodyParser = require("body-parser"),
   serveStatic = require("serve-static"),
   nodemailer = require("nodemailer"),
@@ -30,7 +29,6 @@ app.post("/", function(req, res){
   var newcoment = {name: name, phone: phone, enail: email, coment: coment};
   console.log(newcoment);
 	
-  console.log(process.env.EMAIL_KEY);
 	
   const auth = {
   	auth: {
@@ -62,6 +60,7 @@ app.post("/", function(req, res){
 
 require('dotenv').config();
 
-app.listen(process.env.PORT, process.env.IP, function(){
+
+app.listen(3000, process.env.IP, function(){
    console.log("The Resume Server Has Started!" + this.address().port);
 });

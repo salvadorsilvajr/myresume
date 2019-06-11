@@ -1,3 +1,7 @@
+var passemail = config.PASS_EMAIL;
+var emailkey =  config.EMAIL_KEY;
+var domain =   config.DOMAIN;
+
 /*!
  * jQuery JavaScript Library v3.4.0
  * https://jquery.com/
