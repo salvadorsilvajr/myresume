@@ -1,12 +1,13 @@
 var express = require("express"),
   app = express(),
-    
- 
+      
   bodyParser = require("body-parser"),
   serveStatic = require("serve-static"),
   nodemailer = require("nodemailer"),
   mailgun  =  require("nodemailer-mailgun-transport");
-  
+   
+const  dotenv = require('dotenv');
+dotenv.config();
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,8 +33,8 @@ app.post("/", function(req, res){
 	
   const auth = {
   	auth: {
-		api_key: "2b6642f3c44aebae42aa6c2354342585-87cdd773-75a12d9a",
-		domain: "sandboxcb3ef3bc36ec46ecaa3d5c48baa14cf4.mailgun.org"
+		api_key: process.env.EMAIL_KEY,
+		domain: process.env.DOMAIN
 	}
   };	
 
@@ -41,8 +42,8 @@ app.post("/", function(req, res){
 	
 	
     const HelperOptions = {
-        from: '"Resume form" <salvadorsilvajr@att.net>',
-        to: "ssilvasweb@gmail.com",
+        from: process.env.MYEMAIL,
+        to: process.env.UEMAIL,
         subject: "test from my form",
         text: " A new Coment from app",
         html: "<p><h1> nombre " + name + "</h1></P><p><h2>cellphone "  + phone +"</h2> </p> <p><h3> Comentario" + coment+ "</h3></P>"
@@ -59,7 +60,6 @@ app.post("/", function(req, res){
 }); 
 
 
-
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(process.env.PORTVAR, process.env.IP, function(){
    console.log("The Resume Server Has Started!" + this.address().port);
 });
